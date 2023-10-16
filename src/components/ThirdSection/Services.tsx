@@ -8,10 +8,10 @@ import { IconCheck } from "@tabler/icons-react";
 
 export default function Services () {
     return (
-        <section className="flex flex-col items-center">
-            <h2 className="text-4xl mt-5 mb-7">Nossos Serviços</h2>
+        <section className="flex flex-col items-center border-b border-zinc-200">
+            <h2 className="text-4xl mt-5 mb-7" id="services">Nossos Serviços</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 max-w-7xl items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 max-w-7xl items-center justify-center mb-5">
                 <div className="flex flex-col w-[300px] h-[600px] border border-black rounded-lg p-2 mb-5">
                     <Image src={imageFamily} alt="Familia Viajando" width={350} height={50}/>
                     <h3 className="text-center mt-3 mb-7 font-black text-base">Pacotes Totalmente personalizados</h3>

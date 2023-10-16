@@ -2,11 +2,11 @@ import "../SecondSection/About.css";
 
 export default function About () {
     return (
-        <section className="flex items-center justify-center border-b border-zinc-400">
+        <section className="flex items-center justify-center border-b border-zinc-200">
 
             <div className="flex flex-col items-center justify-center max-w-7xl">
-                <h2 className="text-4xl mt-4">Sobre Nós</h2>
-                <p className="text-lg mt-5 mb-5">
+                <h2 className="text-4xl mt-4" id="about">Sobre Nós</h2>
+                <p className="text-lg mt-5 mb-5 p-3">
                     Somos uma empresa com sede na cidade de Ribeirão Preto - SP, fundado em 2020. Inicíamos nossas atividades organizando pequenas viagens pelas cidades próximas e fomos espandindo nossos serviços e horizontes.
                     Nosso CEO Thiago Cainelli sempre foi um apaixonado por viagens e por ajudar os outros viajantes com seus roteiros, pesquisando passagens mais baratas, hotéis, passeios teve a ideia de criar serviços exclusivos para os clientes!
                 </p>

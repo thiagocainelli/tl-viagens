@@ -1,4 +1,5 @@
 import Apresentation from "@/components/FirstSection/Apresentation";
+import Footer from "@/components/Footer";
 import Contatos from "@/components/FourthSection/Contatos";
 import Header from "@/components/Header";
 import About from "@/components/SecondSection/About";
@@ -9,13 +10,14 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="">
+      <main>
         <Apresentation />
         <About />
         <Services />
         <Contatos />
       </main>
 
+      <Footer />
 
     </>
   )
