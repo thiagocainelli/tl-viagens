@@ -1,0 +1,25 @@
+.bgImageContainer {
+    position: relative;
+    background-image: url('../../images/capa-imagem-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 1;
+}
+
+.bgImageContainer::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.144); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.textTitles {
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 30px; 
+    text-align: center;
+    color: #000000; 
+}

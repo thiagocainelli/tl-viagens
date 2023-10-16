@@ -1,0 +1,12 @@
+.cardAbout {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  6px 6px 0px rgba(0,0,0,0.46);
+}
+
