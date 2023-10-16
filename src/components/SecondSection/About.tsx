@@ -2,7 +2,7 @@ import "../SecondSection/About.css";
 
 export default function About () {
     return (
-        <section className="flex items-center justify-center">
+        <section className="flex items-center justify-center border-b border-zinc-400">
 
             <div className="flex flex-col items-center justify-center max-w-7xl">
                 <h2 className="text-4xl mt-4">Sobre Nós</h2>
@@ -12,7 +12,7 @@ export default function About () {
                 </p>
 
                
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 mb-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 mb-24">
                     <div className="cardAbout">
                         <span className="text-sky-800 font-black text-5xl mb-2">+300</span> Pacotes realizados
                     </div>
