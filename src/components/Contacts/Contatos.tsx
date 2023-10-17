@@ -36,8 +36,8 @@ export default function Contatos () {
             
             <h2 className="text-4xl mb-5" id="contacts">Contatos</h2>
             
-            <div className="flex flex-col items-center justify-center max-w-7xl lg:flex-row flex-wrap">
-                <div className="bg-sky-800 p-10 px-10 text-white h-[550px] max-w-[400px]">
+            <div className="flex flex-col items-center justify-center max-w-7xl md:flex-row flex-wrap">
+                <div className="bg-sky-800 p-5 px-10 text-white h-[550px] max-w-[350px] lg:max-w-[600px]">
                     <h3 className="text-center text-2xl mb-6">Envie-nos uma mensagem</h3>
                     <form autoComplete="off" method="POST">
                         <div className="mb-2">
@@ -94,8 +94,8 @@ export default function Contatos () {
                     </form>  
                 </div>
 
-                <div className="p-12 text-white bg-sky-600 h-[550px] max-w-[400px]">
-                    <h3 className="text-2xl text-center mb-5">Entre em contato conosco</h3>
+                <div className="px-12 py-5 text-white bg-sky-600 h-[550px] max-w-[350px] flex flex-col items-center lg:max-w-[600px]">
+                    <h3 className="text-2xl text-center mb-5 w-full">Entre em contato conosco</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14880.910492417564!2d-47.80051733766213!3d-21.18311477147639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1697487884461!5m2!1spt-BR!2sbr" width="300" height="200" loading="lazy"></iframe>
 
                     <p className="contactTexts"> <IconHome /> Rua Lafaiete, 1245 - Ribeirão Preto / SP </p>
