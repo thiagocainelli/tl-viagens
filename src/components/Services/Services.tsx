@@ -35,7 +35,7 @@ export default function Services () {
                         <p  className="flex gap-2"><IconCheck className="text-green-600"/> Realizamos os pagamentos das taxas;</p>
                         <p  className="flex gap-2"><IconCheck className="text-green-600"/> Preenchimento de formulários e documentos.</p>
                     </div>
-                    <div className="flex justify-center w-full mt-9">
+                    <div className="flex justify-center w-full mt-2">
                         <Button text="Entre em contato"/>
                     </div>
                 </div>
