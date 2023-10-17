@@ -13,7 +13,7 @@ export default function Services () {
             
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 max-w-7xl items-center justify-center mb-5">
                 <div className="flex flex-col w-[300px] h-[650px] border border-black rounded-lg p-2 mb-5">
-                    <Image src={imageFamily} alt="Familia Viajando" width={350} height={50}/>
+                    <Image src={imageFamily} alt="Familia Viajando" width={350} height={50} className="rounded-t-md"/>
                     <h3 className="text-center mt-3 mb-7 font-black text-base">Pacotes Totalmente personalizados</h3>
                     <div className="flex flex-col gap-4">
                         <p className="flex gap-2"><IconCheck className="text-green-600"/> Ajuda com a escolha do destino e dos dias;</p>
@@ -27,7 +27,7 @@ export default function Services () {
                     </div>
                 </div>
                 <div className="flex flex-col w-[300px] h-[650px] border border-black rounded-lg p-2 mb-5">
-                    <Image src={visaAndPassport} alt="Visto e passaporte" width={350} height={50}/>
+                    <Image src={visaAndPassport} alt="Visto e passaporte" width={350} height={50} className="rounded-t-md"/>
                     <h3 className="text-center mt-3 mb-7 font-black text-lg">Assessoria com Visto e passaporte</h3>
                     <div className="flex flex-col gap-4">
                         <p className="flex gap-2"><IconCheck className="text-green-600"/> Auxilio para fazer o passaporte;</p>
@@ -41,7 +41,7 @@ export default function Services () {
                 </div>
 
                 <div className="flex flex-col w-[300px] h-[650px] border border-black rounded-lg p-2 mb-5">
-                    <Image src={image24hrs} alt="24hs funcionando" width={350} height={50}/>
+                    <Image src={image24hrs} alt="24hs funcionando" width={350} height={50} className="rounded-t-md"/>
                     <h3 className="text-center mt-3 mb-7 font-black text-lg">Auxilio 24hs por dia todos os dias</h3>
                     <div className="flex flex-col gap-4">
                         <p className="flex gap-2"><IconCheck className="text-green-600"/> Ajudamos com tradução;</p>
@@ -55,7 +55,7 @@ export default function Services () {
                 </div>
 
                 <div className="flex flex-col w-[300px] h-[650px] border border-black rounded-lg p-2 mb-5">
-                    <Image src={othersServices} alt="Outros serviços" width={350} height={50}/>
+                    <Image src={othersServices} alt="Outros serviços" width={350} height={50} className="rounded-t-md"/>
                     <h3 className="text-center mt-3 mb-7 font-black text-lg">Serviços Extras</h3>
                     <div className="flex flex-col gap-4">
                         <p className="flex gap-2"><IconCheck className="text-green-600"/> Aluguel de carros;</p>
