@@ -2,7 +2,6 @@ import imageFamily from "@/images/familia-viajando.jpg"
 import image24hrs from "@/images/24-7-servicos.jpg"
 import visaAndPassport from "@/images/passaporte-e-visto.jpg"
 import othersServices from "@/images/outros-servicos.jpg"
-
 import Image from "next/image";
 import { IconCheck } from "@tabler/icons-react";
 import Button from "../Button";

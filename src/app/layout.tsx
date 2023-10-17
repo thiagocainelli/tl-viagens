@@ -2,6 +2,7 @@ import './styles/globals.css'
 import './styles/scrollbar.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import '@/app/styles/scroll-animation.css';
 
 const roboto = Roboto({ weight: ['300', '400', '500', '700'], subsets: ['latin'] })
 
