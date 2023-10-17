@@ -8,5 +8,11 @@
     align-items: center;
     justify-content: center;
     box-shadow:  6px 6px 0px rgba(0,0,0,0.46);
+    cursor: default;
+}
+
+.cardAbout:hover {
+    transform: scale(1.05);
+    
 }
 

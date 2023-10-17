@@ -1,9 +1,9 @@
-import Apresentation from "@/components/FirstSection/Apresentation";
-import Footer from "@/components/Footer";
-import Contatos from "@/components/FourthSection/Contatos";
-import Header from "@/components/Header";
-import About from "@/components/SecondSection/About";
-import Services from "@/components/ThirdSection/Services";
+import Apresentation from "@/components/Apresentation/Apresentation";
+import Footer from "@/components/Footer/Footer";
+import Contatos from "@/components/Contacts/Contatos";
+import Header from "@/components/Header/Header";
+import About from "@/components/About/About";
+import Services from "@/components/Services/Services";
 
 export default function Home() {
   return (

@@ -1,7 +1,36 @@
-import "@/components/FourthSection/contatos.css";
+"use client"
+
+import "@/components/Contacts/contatos.css";
 import { IconBrandWhatsapp, IconHome, IconMail } from '@tabler/icons-react';
+import { useState } from "react";
 
 export default function Contatos () {
+    
+    const [fullname, setFullname] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [contact, setContact] = useState<string>("")
+    const [message, setMessage] = useState<string>("")
+    
+    function sendMessage (ev: any) {
+        ev.preventDefault()
+
+        if (fullname === '' || email === '' || contact === '' || message === '') {
+            alert('Por favor inserir as informações no formulário corretamente.')
+        } else if (email.length < 10 || fullname.length < 10 || contact.length < 9) {
+            alert('Por favor inserir informações no formulário corretamente.')
+        } else (
+            alert(`Olá, ${fullname}! Obrigado por nos enviar uma mensagem, entraremos em contato assim que possível.`)
+
+        )
+
+        setFullname("")
+        setEmail("")
+        setContact("")
+        setMessage("")
+
+    }
+    
+    
     return (
         <section className="flex flex-col items-center justify-between mt-6 mb-10">
             
@@ -10,7 +39,7 @@ export default function Contatos () {
             <div className="flex flex-col items-center justify-center max-w-7xl lg:flex-row flex-wrap">
                 <div className="bg-sky-800 p-10 px-10 text-white h-[550px] max-w-[400px]">
                     <h3 className="text-center text-2xl mb-6">Envie-nos uma mensagem</h3>
-                    <form className="">
+                    <form autoComplete="off" method="POST">
                         <div className="mb-2">
                             <label htmlFor="name">Nome completo</label>
                             <input
@@ -18,6 +47,8 @@ export default function Contatos () {
                                 type="text"
                                 name="name"
                                 id="name"
+                                value={fullname}
+                                onChange={(ev) => setFullname(ev.target.value)}
                             />
                         </div>
                         <div className="mb-2">
@@ -27,6 +58,8 @@ export default function Contatos () {
                                 type="email" 
                                 name="email" 
                                 id="email" 
+                                value={email}
+                                onChange={(ev) => setEmail(ev.target.value)}
                             />
                         </div>
                         <div className="mb-2">
@@ -37,16 +70,25 @@ export default function Contatos () {
                                 type="tel" 
                                 name="contact" 
                                 id="contact" 
+                                value={contact}
+                                onChange={(ev) => setContact(ev.target.value)}
                             />
                         </div>
                         <div className="flex flex-col">
                             <label htmlFor="message">Mensagem</label>
-                            <textarea name="message" id="message"  className="bg-sky-900"></textarea>
+                            <textarea 
+                                name="message" 
+                                id="message"  
+                                className="bg-sky-900"
+                                value={message}
+                                onChange={(ev) => setMessage(ev.target.value)}
+                            ></textarea>
+
                         </div>
 
                         <div className="flex items-center justify-center">
-                            <button className="bg-sky-900 py-2 px-5 mt-4 hover:bg-sky-700 rounded-md">
-                                Enviar
+                            <button onClick={sendMessage} className="bg-sky-900 text-white transition-colors rounded-md py-2 px-5 mt-4 hover:bg-yellow-500 hover:text-black w-full">
+                                Enviar mensagem
                             </button>
                         </div>
                     </form>  
