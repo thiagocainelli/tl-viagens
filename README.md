@@ -1,2 +1,2 @@
-Projeto consiste na criação de um Website para uma agência de viagens. Foi utilizado para o desenvolvimento: Next.js, TailwindCSS e CSS. 
+Projeto consiste na criação de um Website para uma agência de viagens. Foi utilizado para o desenvolvimento: NextJS, TypeScript, TailwindCSS. 
 Deploy para prévia visualização: https://tl-viagens.vercel.app/
